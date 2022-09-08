@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="container mt-5">
+    <label
+      for="title"
+      class="col-sm-2 col-form-label"
+      style="font-size: 20px; font-weight: bold"
+      >BlogTitle:
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      [(ngModel)]="title"
+    /><br />
+    <label
+      for="imageUrl"
+      class="col-sm-2 col-form-label"
+      style="font-size: 20px; font-weight: bold"
+      >ImageURL:
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      id="imageUrl"
+      [(ngModel)]="imageUrl"
+    /><br />
+
+    <label
+      for="content"
+      class="col-sm-2 col-form-label"
+      style="font-size: 20px; font-weight: bold"
+      >BlogContent:
+    </label>
+    <!-- <angular-editor
+      [(ngModel)]="description"
+      formControlName="about"
+    ></angular-editor> -->
+    <input
+      type="text"
+      class="form-control"
+      id="content"
+      style="padding-bottom: 15rem"
+      [(ngModel)]="description"
+    /><br />
+    <input type="submit" (click)="submit()" />
+  </div>
+</div>

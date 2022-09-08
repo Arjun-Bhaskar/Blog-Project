@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="container" style="margin-top: 5rem">
+    <div>
+      <!-- <label for="fname">First Name:</label> -->
+      <label for="fname" class="col-sm-2 col-form-label">FirstName:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="fname"
+        [(ngModel)]="fname"
+      /><br />
+      <!-- <label for="lname">Last Name:</label> -->
+      <label for="lname" class="col-sm-2 col-form-label">LastName:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lname"
+        [(ngModel)]="lname"
+      /><br />
+
+      <!-- <label for="email">Email:</label> -->
+      <label for="email" class="col-sm-2 col-form-label">Email:</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        [(ngModel)]="email"
+      /><br />
+
+      <!-- <label for="phoneno">Phone No:</label> -->
+      <label for="phoneno" class="col-sm-2 col-form-label">PhoneNo:</label>
+      <input
+        type="number"
+        class="form-control"
+        id="phoneno"
+        [(ngModel)]="phoneNo"
+      /><br />
+
+      <!-- <label for="password">password:</label> -->
+      <label for="password" class="col-sm-2 col-form-label">Password:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        [(ngModel)]="password"
+      /><br />
+      <input type="submit" (click)="submit()" />
+      <span *ngIf="status" [ngStyle]="{ color: isError ? 'red' : 'green' }">{{
+        status
+      }}</span>
+    </div>
+  </div>
+</div>
